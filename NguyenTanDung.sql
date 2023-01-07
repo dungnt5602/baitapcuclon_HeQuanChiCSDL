@@ -10,7 +10,7 @@ output: cập nhật tuyến bay vào bảng TuyenBay
 -- Xoá tuyến bay: cập nhật trạng thái bảng TuyenBay
 
 -- Lập chuyến bay
-input: MaTuyenBay, MaMB, ThoiGianKhoiHanh, ThoiGianBayDuKien
+input: MaTuyenBay, MaMB, ThoiGianKhoiHanh, ThoiGianBayDuKien,
 GhiChu
 + Kiểm tra máy bay trùng thời gian bay: kiểm tra bảng chuyenbay
 ThoiGianKhoiHanh > thời gian bay + thời gian ước tính + 1 ngày
@@ -19,7 +19,7 @@ ThoiGianKhoiHanh > thời gian bay + thời gian ước tính + 1 ngày
 + Tự gen vé trên bảng thông tin chi tiết vé (2 loại)
 
 -- Chốt lập chuyến bay
-input: Matuyenbay, Mamb, ThoiGianKhoiHanh, ThoiGianHaCanh, loai 1, loai 2 (tran)
+input: Matuyenbay, Mamb, ThoiGianKhoiHanh, ThoiGianHaCanh, loai 1, loai 2, GiaLoai1, GiaLoai2 (tran)
 - Check tuyen bay: Còn hoạt động không ? (function) return 0 or 1 
 - Check thoi gian khoi hanh  < thoi gian ha canh (thông tin nhập vào) 
 - Check máy bay: 

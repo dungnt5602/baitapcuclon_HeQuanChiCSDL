@@ -1,33 +1,37 @@
 ﻿CREATE database ban_ve_may_bay
-use ban_ve_may_bay
+
 -- //bảng nhân viên//
-create table Nhanvien(
+create table NhanVien(
 	MaNV nvarchar(10) not null primary key,
 	TenNV nvarchar(50) not null,
 	Diachi nvarchar(50) not null,
 	SDT text,
-	Ngaysinh datetime,
-	Gioitinh nchar(5)
+	TrangThai nvarchar(30)
 );
 -- //bảng khách hàng//
-create table Khachhang(
+create table KhachHang(
 	MaKH nvarchar(10) not null primary key,
 	TenKH nvarchar(50) not null,
 	Diachi nvarchar(50) not null,
 	CMND text,
-	Sove text
+	SDT text,
+	TrangThai nvarchar(30)
 );
 -- //bảng máy bay//
 create table Maybay(
 	MaMB nvarchar(10) not null primary key,
 	TenMB nvarchar(50) not null,
+	HangSanXuat nvarchar(100),
+	SoGheLoai1 int,
+	SoGheLoai2 int,
 	Tongsoghe int
 );
 -- //bảng sân bay//
 create table Sanbay(
 	MaSB nvarchar(10) not null primary key,
 	TenSB nvarchar(50) not null,
-	Tinh nvarchar(50)
+	DiaChi nvarchar(50),
+	TrangThai nvarchar(50)
 );
 
 -- //bảng tuyến bay//
@@ -38,38 +42,48 @@ create table Tuyenbay(
 	Sanbayden nvarchar(50) not null
 	foreign key (MaSB) references Sanbay(MaSB)
 );
--- //bảng chuyến bay//
+-- bảng chuyến bay
 create table Chuyenbay(
 	Machuyenbay nvarchar(10) not null primary key,
 	MaTuyen nvarchar(10) not null,
 	MaMB nvarchar(10) not null,
-	Khoihanh datetime not null,
-	Thoigiandukien time not null,
-	Soghetrong int,
+	ThoiGianKhoiHanh datetime not null,
+	ThoiGianHaCanh datetime not null,
+	SoGheLoai1 int,
+	SoGheLoai2 int,
+	TongSoGhe int,
+	TrangThai nvarchar(50),
 	foreign key (MaTuyen) references Tuyenbay(MaTuyen),
 	foreign key (MaMB) references Maybay(MaMB)
 );
 -- //bảng hóa đơn//
-create table Hoadon(
+create table HoaDon(
 	MaHD nvarchar(10) not null primary key,
 	MaKH nvarchar(10) not null,
 	MaNV nvarchar (10) not null,
 	Ngaylap datetime,
-	Thanhtien int,
+	TongTien int,
 	foreign key(MaKH) references Khachhang(MaKH),
 	foreign key(MaNV) references Nhanvien(MaNV)
 );
--- //bảng vé//
-create table VE(
-	MaVE nvarchar(10) not null primary key,
+-- //bảng thông tin chi tiết vé//
+create table ThongTinChiTietVe(
+	MaThongTinVe nvarchar(10) not null primary key,
 	Machuyenbay nvarchar(10) not null,
-	MaKH nvarchar(10) not null,
-	MaHD nvarchar(10) not null,
-	Hangve nvarchar(50) not null,
 	Loaive nvarchar(20) not null,
-	Sohe int,
-	Tinhtrang nvarchar(10)
-	foreign key(Machuyenbay) references Chuyenbay(Machuyenbay),
-	foreign key(MaKH) references Khachhang(MaKH),
-	foreign key(MaHD) references Hoadon(MaHD)
+	SoLuong int,
+	SoLuongCon int,
+	GiaVe money,
+	foreign key(Machuyenbay) references Chuyenbay(Machuyenbay)
+);
+
+-- //bảng vé bán//
+create table VeBan(
+	MaVeBan nvarchar(10) not null primary key,
+	MaHoaDon nvarchar(10) not null,
+	MaThongTinVe nvarchar(10) not null,
+	SoLuong int,
+	ThanhTien money,
+	foreign key(MaHoaDon) references HoaDon(MaHD),
+	foreign key(MaThongTinVe) references ThongTinChiTietVe(MaThongTinVe)
 );
