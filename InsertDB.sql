@@ -66,3 +66,29 @@ INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
 INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
      VALUES
            ('Khach hang 12', 'Ha Noi', '95312858128', '092375382', 'Dang Di')
+
+insert into Maybay(TenMB,HangSanXuat,SoGheLoai1,SoGheLoai2,Tongsoghe)
+values	
+	('being1','tesna',50,50,100),
+	('boing2','tesna',60,50,110),
+	('boing3','tesna',70,40,110),
+	('boing4','tesna',80,20,100),
+	('boing5','tesna',90,30,120),
+	('boing6','tesna',40,70,110),
+	('boing7','tesna',40,60,100),
+	('boing8','tesna',30,70,100),
+	('boing9','tesna',20,80,100),
+	('boing8','tesna',50,60,110);
+
+insert into Sanbay(TenSB,DiaChi,TrangThai)
+values
+	('NoiBai','HaNoi','active'),
+	('TanSon1','HCM','active'),
+	('SaoVang','ThanhHoa','active'),
+	('VanDon','QuangNinh','active'),
+	('CatBi','HaiPhong','active'),
+	('Vinh','NgheAn','active'),
+	('PhuBai','Hue','active'),
+	('CamRanh','KhanhHoa','active'),
+	('PhuQUoc','KienGiang','active'),
+	('PhuCat','BinhDinh','active');
