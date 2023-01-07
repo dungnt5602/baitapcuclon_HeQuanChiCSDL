@@ -1,5 +1,7 @@
 ﻿CREATE database ban_ve_may_bay
 
+go
+use ban_ve_may_bay
 -- //bảng nhân viên//
 create table NhanVien(
 	MaNV int not null IDENTITY(1,1) primary key,
@@ -37,10 +39,8 @@ create table Sanbay(
 -- //bảng tuyến bay//
 create table TuyenBay(
 	MaTuyen int not null IDENTITY(1,1) primary key,
-	MaSB int not null,
-	Sanbaydi nvarchar(50) not null,
-	Sanbayden nvarchar(50) not null
-	foreign key (MaSB) references Sanbay(MaSB)
+	MaSanbaydi int not null,
+	MaSanbayden int not null,
 );
 -- bảng chuyến bay
 create table Chuyenbay(
