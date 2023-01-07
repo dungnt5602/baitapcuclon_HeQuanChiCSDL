@@ -92,3 +92,20 @@ values
 	('CamRanh','KhanhHoa','active'),
 	('PhuQUoc','KienGiang','active'),
 	('PhuCat','BinhDinh','active');
+
+insert into TuyenBay(MaSanbaydi,MaSanbayden)
+values
+	(1,2),(2,3),(3,5),(6,1),(7,3),(4,6),(5,1),(8,2),(9,5),(10,8);
+
+insert into Chuyenbay(MaTuyen,MaMB,ThoiGianKhoiHanh,ThoiGianHaCanh,SoGheLoai1,SoGheLoai2,TongSoGhe,TrangThai)
+values
+	(1,1,'20220618 10:34:09 AM','20220618 10:34:09 AM',50,50,100,'chua_bay'),
+	(2,2,'20220618 10:34:09 AM','20220618 10:34:09 AM',60,50,110,'dang_bay'),
+	(3,3,'20220618 10:34:09 AM','20220618 10:34:09 AM',70,40,110,'ket_thuc'),
+	(4,4,'20220618 10:34:09 AM','20220618 10:34:09 AM',80,20,100,'dang_bay'),
+	(5,5,'20220618 10:34:09 AM','20220618 10:34:09 AM',90,30,120,'chua_bay'),
+	(6,6,'20220618 10:34:09 AM','20220618 10:34:09 AM',40,70,110,'chua_bay'),
+	(7,7,'20220618 10:34:09 AM','20220618 10:34:09 AM',40,60,100,'chua_bay'),
+	(8,8,'20220618 10:34:09 AM','20220618 10:34:09 AM',30,70,100,'ket_thuc'),
+	(9,9,'20220618 10:34:09 AM','20220618 10:34:09 AM',20,80,100,'chua_bay'),
+	(10,10,'20220618 10:34:09 AM','20220618 10:34:09 AM',50,60,110,'chua_bay');
