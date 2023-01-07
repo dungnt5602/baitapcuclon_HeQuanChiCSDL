@@ -1,0 +1,12 @@
+I. Thiet ke csdl
+1. Mo ta bai toan
+2. Mo hinh ER
+3. Mo hinh quan he
+II. Lap trinh
+1. Con tro
+SV A: ............
+SV B: ............
+2. Thu tuc
+3. Ham
+4. Trigger
+5. Quan li giao dich nguoi dung
