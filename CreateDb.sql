@@ -2,7 +2,7 @@
 
 -- //bảng nhân viên//
 create table NhanVien(
-	MaNV int not null primary key,
+	MaNV int not null IDENTITY(1,1) primary key,
 	TenNV nvarchar(50) not null,
 	Diachi nvarchar(50) not null,
 	SDT varchar(15),
@@ -10,7 +10,7 @@ create table NhanVien(
 );
 -- //bảng khách hàng//
 create table KhachHang(
-	MaKH int not null primary key,
+	MaKH int not null IDENTITY(1,1) primary key,
 	TenKH nvarchar(50) not null,
 	Diachi nvarchar(50) not null,
 	CMND varchar(20),
@@ -19,7 +19,7 @@ create table KhachHang(
 );
 -- //bảng máy bay//
 create table Maybay(
-	MaMB int not null primary key,
+	MaMB int not null IDENTITY(1,1) primary key,
 	TenMB nvarchar(50) not null,
 	HangSanXuat nvarchar(100),
 	SoGheLoai1 int,
@@ -28,7 +28,7 @@ create table Maybay(
 );
 -- //bảng sân bay//
 create table Sanbay(
-	MaSB int not null primary key,
+	MaSB int not null IDENTITY(1,1) primary key,
 	TenSB nvarchar(50) not null,
 	DiaChi nvarchar(50),
 	TrangThai nvarchar(50)
@@ -36,7 +36,7 @@ create table Sanbay(
 
 -- //bảng tuyến bay//
 create table TuyenBay(
-	MaTuyen int not null primary key,
+	MaTuyen int not null IDENTITY(1,1) primary key,
 	MaSB int not null,
 	Sanbaydi nvarchar(50) not null,
 	Sanbayden nvarchar(50) not null
@@ -44,7 +44,7 @@ create table TuyenBay(
 );
 -- bảng chuyến bay
 create table Chuyenbay(
-	Machuyenbay int not null primary key,
+	Machuyenbay int not null IDENTITY(1,1) primary key,
 	MaTuyen int not null,
 	MaMB int not null,
 	ThoiGianKhoiHanh datetime not null,
@@ -58,7 +58,7 @@ create table Chuyenbay(
 );
 -- //bảng hóa đơn//
 create table HoaDon(
-	MaHD int not null primary key,
+	MaHD int not null IDENTITY(1,1) primary key,
 	MaKH int not null,
 	MaNV int not null,
 	Ngaylap datetime,
@@ -68,7 +68,7 @@ create table HoaDon(
 );
 -- //bảng thông tin chi tiết vé//
 create table ThongTinChiTietVe(
-	MaThongTinVe int not null primary key,
+	MaThongTinVe int not null IDENTITY(1,1) primary key,
 	Machuyenbay int not null,
 	Loaive nvarchar(20) not null,
 	SoLuong int,
@@ -79,7 +79,7 @@ create table ThongTinChiTietVe(
 
 -- //bảng vé bán//
 create table VeBan(
-	MaVeBan int not null primary key,
+	MaVeBan int not null IDENTITY(1,1) primary key,
 	MaHoaDon int not null,
 	MaThongTinVe int not null,
 	SoLuong int,
