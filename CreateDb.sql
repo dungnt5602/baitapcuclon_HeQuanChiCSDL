@@ -17,7 +17,6 @@ create table KhachHang(
 	Diachi nvarchar(50) not null,
 	CMND varchar(20),
 	SDT varchar(15),
-	TrangThai nvarchar(30)
 );
 -- //bảng máy bay//
 create table Maybay(
@@ -63,6 +62,7 @@ create table HoaDon(
 	MaNV int not null,
 	Ngaylap datetime,
 	TongTien int,
+	TrangThai nvarchar(30)
 	foreign key(MaKH) references Khachhang(MaKH),
 	foreign key(MaNV) references Nhanvien(MaNV)
 );
