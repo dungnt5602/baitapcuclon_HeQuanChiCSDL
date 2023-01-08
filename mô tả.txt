@@ -10,3 +10,4 @@ SV B: ............
 3. Ham
 4. Trigger
 5. Quan li giao dich nguoi dung
+6. View
