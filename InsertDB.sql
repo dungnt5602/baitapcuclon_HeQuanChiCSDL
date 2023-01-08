@@ -30,42 +30,42 @@ INSERT INTO [dbo].[NhanVien]([TenNV],[Diachi],[SDT],[TrangThai])
      VALUES('ABCBCBC', 'baba', '098385315', 'duoiviec')
 
 
-INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
+INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT])
      VALUES
-           ('Khach hang 1', 'Ha Noi', '95312858128', '092375382', 'Dang Di')
-INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
+           ('Khach hang 1', 'Ha Noi', '95312858128', '092375382')
+INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT])
      VALUES
-           ('Khach hang 2', 'Ha Noi', '95312858128', '092375382', 'Dang Di')
-INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
+           ('Khach hang 2', 'Ha Noi', '95312858128', '092375382')
+INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT])
      VALUES
-           ('Khach hang 3', 'Ha Noi', '95312858128', '092375382', 'Dang Di')
-INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
+           ('Khach hang 3', 'Ha Noi', '95312858128', '092375382')
+INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT])
      VALUES
-           ('Khach hang 4', 'Ha Noi', '95312858128', '092375382', 'Dang Di')
-INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
+           ('Khach hang 4', 'Ha Noi', '95312858128', '092375382')
+INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT])
      VALUES
-           ('Khach hang 5', 'Ha Noi', '95312858128', '092375382', 'Dang Di')
-INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
+           ('Khach hang 5', 'Ha Noi', '95312858128', '092375382')
+INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT])
      VALUES
-           ('Khach hang 6', 'Ha Noi', '95312858128', '092375382', 'Dang Di')
-INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
+           ('Khach hang 6', 'Ha Noi', '95312858128', '092375382')
+INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT])
      VALUES
-           ('Khach hang 7', 'Ha Noi', '95312858128', '092375382', 'Dang Di')
-INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
+           ('Khach hang 7', 'Ha Noi', '95312858128', '092375382')
+INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT])
      VALUES
-           ('Khach hang 8', 'Ha Noi', '95312858128', '092375382', 'Dang Di')
-INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
+           ('Khach hang 8', 'Ha Noi', '95312858128', '092375382')
+INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT])
      VALUES
-           ('Khach hang 9', 'Ha Noi', '95312858128', '092375382', 'Dang Di')
-INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
+           ('Khach hang 9', 'Ha Noi', '95312858128', '092375382')
+INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT])
      VALUES
-           ('Khach hang 10', 'Ha Noi', '95312858128', '092375382', 'Dang Di')
-INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
+           ('Khach hang 10', 'Ha Noi', '95312858128', '092375382')
+INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT])
      VALUES
-           ('Khach hang 11', 'Ha Noi', '95312858128', '092375382', 'Dang Di')
-INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT],[TrangThai])
+           ('Khach hang 11', 'Ha Noi', '95312858128', '092375382')
+INSERT INTO [dbo].[KhachHang]([TenKH],[Diachi],[CMND],[SDT])
      VALUES
-           ('Khach hang 12', 'Ha Noi', '95312858128', '092375382', 'Dang Di')
+           ('Khach hang 12', 'Ha Noi', '95312858128', '092375382')
 
 insert into Maybay(TenMB,HangSanXuat,SoGheLoai1,SoGheLoai2,Tongsoghe)
 values	
@@ -93,20 +93,20 @@ values
 	('PhuQUoc','KienGiang','active'),
 	('PhuCat','BinhDinh','active');
 
-insert into HoaDon(MaKH, MaNV, Ngaylap, TongTien)
+insert into HoaDon(MaKH, MaNV, Ngaylap, TrangThai)
 values 
-	(1, 1, '20220618 10:34:09 AM', 123000),
-	(2, 2, '20220218 10:34:09 AM', 230000),
-	(3, 3, '20220318 10:34:09 AM', 300000),
-	(4, 4, '20220118 10:34:09 AM', 1203000),
-	(5, 5, '20220718 10:34:09 AM', 450000),
-	(6, 6, '20220618 10:34:09 AM', 900000),
-	(7, 2, '20220618 10:34:09 AM', 520000),
-	(8, 3, '20220618 10:34:09 AM', 4500000),
-	(9, 4, '20220618 10:34:09 AM', 123000),
-	(10, 2, '20220618 10:34:09 AM', 123000),
-	(11, 1, '20220618 10:34:09 AM', 123000),
-	(12, 1, '20220618 10:34:09 AM', 123000)
+	(1, 1, '20220618 10:34:09 AM','hoan_thanh'),
+	(2, 2, '20220218 10:34:09 AM', 'da_huy'),
+	(3, 3, '20220318 10:34:09 AM','hoan_thanh'),
+	(4, 4, '20220118 10:34:09 AM', 'hoan_thanh'),
+	(5, 5, '20220718 10:34:09 AM', 'hoan_thanh'),
+	(6, 6, '20220618 10:34:09 AM', 'hoan_thanh'),
+	(7, 2, '20220618 10:34:09 AM', 'hoan_thanh'),
+	(8, 3, '20220618 10:34:09 AM', 'hoan_thanh'),
+	(9, 4, '20220618 10:34:09 AM', 'hoan_thanh'),
+	(10, 2, '20220618 10:34:09 AM','hoan_thanh'),
+	(11, 1, '20220618 10:34:09 AM', 'da_huy'),
+	(12, 1, '20220618 10:34:09 AM', 'hoan_thanh')
 
 insert into TuyenBay(MaSanbaydi,MaSanbayden)
 values

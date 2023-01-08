@@ -52,3 +52,6 @@ else begin
 		(@mcb,'1',@vloai1,@vloai1,@gloai1),
 		(@mcb,'2',@vloai2,@vloai2,@gloai2);
 end
+
+execute lapchuyenbay 1,1,'20220718 10:34:09 AM','20220720 10:34:09 AM',50,50,100000,101000
+

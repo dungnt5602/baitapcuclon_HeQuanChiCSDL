@@ -53,3 +53,11 @@ thông tin khách hàng: (CMND, tên, số điện thoại, địa chỉ)
 -- Tính tỷ lệ từng chuyến bay
 
 -- Tổng kết thông tin bay
+
+--Đặt vé
+input: makhach, manhanvien,ngaytaohoadon(getdate()),machuyen,loaive,so ---proc
++ tao hoa don(makhach,manv,ngaylap)
++ tạo vé bán(mahd,ma_tt_ve,soluong) 
++ tạo trigger trừ số lượng vé trong tt chi tiết vé sau khi tạo vé bán
++ tao function tinh tong tien hoa don
++ tao view hien thi mahd,makhach,manv,ngaylaphd,tongtien
